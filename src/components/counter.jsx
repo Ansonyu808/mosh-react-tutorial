@@ -1,6 +1,22 @@
 import React, { Component } from "react";
 
 class Counter extends Component {
+  componentDidUpdate(prevProps, prevState) {
+    // console.log("Prev Props", prevProps);
+    // console.log("Prev State", prevState);
+    if (prevProps.counter.value !== this.props.counter.value) {
+      // Perfect for an Ajax call and get new data from the server
+      // In this case, if we update counter value on the frontend, post that data to the server
+      console.log("Do something");
+    }
+  }
+
+  componentWillUnmount() {
+    console.log("a");
+    console.log("Counter - Unmount");
+    // Perfect for cleanup of timers or listeners before the element is remeoved from the dom to avoid memory leaks
+  }
+
   render() {
     return (
       <div>
