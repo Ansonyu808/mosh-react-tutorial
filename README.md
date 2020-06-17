@@ -6,5 +6,5 @@ to run:
 
 - Clone the repository
 - Navigate to working directory
-- run `npm i`
-- run `npm start`
+- run <!-- prettier-ignore -->```npm i```
+- run <!-- prettier-ignore -->```npm start```
